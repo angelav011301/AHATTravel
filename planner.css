@@ -1,0 +1,29 @@
+
+.Jounral{
+  color: black;
+  font-size : 25px;
+}
+
+.time{
+  float: right;
+  text-align: right;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  display:none; }
+
+#idDay {
+  width: 100%;
+  padding: 50px 0;
+  display:none;
+}
+
+.boxed {
+  background-color: #ffdb2b;
+  float: right;
+  width: 35%;
+  height: 170px;
+  text-align: center;
+}

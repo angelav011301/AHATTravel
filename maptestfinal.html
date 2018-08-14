@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <title> Map </title>
+   <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/css/ol.css" type="text/css">
+   <link rel="stylesheet" type="text/css" href="maptestfinal.css">
+   <style>
+     .map {
+       height: 600px;
+       width: 100%;
+     }
+   </style>
+   <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/build/ol.js"></script>
+   <title>OpenLayers example</title>
+
+   <link rel="stylesheet" href = "AHAT.css">
+   <link rel="stylesheet" href = "planner.css">
+   <!-- NAVIGATION BAR -->
+   <ul>
+     <li><a href="default.asp">Home</a></li>
+     <li><a href="planner.html">Planner</a></li>
+     <li><a href="explore.html">Explore</a></li>
+     <li><a href="contact.asp">Profile</a></li>
+   </ul>
+
+
+
+ </head>
+ <body>
+   <div id="map" class="map"></div>
+   <script type="text/javascript">
+     var map = new ol.Map({
+       target: 'map',
+       layers: [
+         new ol.layer.Tile({
+           source: new ol.source.OSM()
+         })
+       ],
+       view: new ol.View({
+         center: ol.proj.fromLonLat([-74.077642,40.728157]),
+         zoom: 4
+       })
+     });
+   </script>
+   <button id="1" onclick= "map.getView().setCenter(ol.proj.fromLonLat([285.922358, 40.728793]))">Your Location</button>
+   <button id="2" onclick="map.getView().setCenter(ol.proj.fromLonLat([100.523186, 13.736717]))">Bangkok</button>
+   <button id="3" onclick="map.getView().setCenter(ol.proj.fromLonLat([0.118092, 51.509865]))">London</button>
+   <button id="4" onclick="map.getView().setCenter(ol.proj.fromLonLat([139.691706, 35.689487]))">Tokyo</button>
+   <button id="5" onclick="map.getView().setCenter(ol.proj.fromLonLat([55.296249, 25.276987]))">Dubai</button>
+   <button id="6" onclick= "map.getView().setCenter(ol.proj.fromLonLat([103.851959, 1.290270]))">Singapore</button>
+   <button id="7" onclick="map.getView().setCenter(ol.proj.fromLonLat([127.024612, 37.532600    ]))">Seoul</button>
+   <button id="8" onclick="map.getView().setCenter(ol.proj.fromLonLat([286.064758, 40.730610    ]))">New York City</button>
+   <button id="9" onclick="map.getView().setCenter(ol.proj.fromLonLat([114.1095,22.3964 ]))">Hong Kong</button>
+   <button id="10" onclick="map.getView().setCenter(ol.proj.fromLonLat([2.352222, 48.856614]))">Paris</button>
+ </body>
+</html>
