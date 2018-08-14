@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+ <head>
+      <title>Explore!</title>
+     <link rel="stylesheet" href = "AHAT.css">
+     <link rel="stylesheet" href = "explore.css">
+     <!-- NAVIGATION BAR -->
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="planner.html">Planner</a></li>
+       <li><a href="explore.html">Explore</a></li>
+       <li><a href="contact.asp">Profile</a></li>
+     </ul>
+ </head>
+ <body>
+   <h1 class="headers">Explore!</h1>
+   <h4>Find hotels, attractions, and restaurants in major cities around the world!</h4>
+   <input type="text" id="myInput" onkeyup="searchCities()" placeholder="Search for cities...">
+
+   <ul id="myUL">
+      <li onclick="showBangkok()"><a href="#">Bangkok</a></li>
+      <li onclick="showDubai()"><a href="#">Dubai</a></li>
+      <li onclick="showHongKong()"><a href="#">Hong Kong</a></li>
+      <li onclick="showIstanbul()"><a href="#">Istanbul</a></li>
+      <li onclick="showLondon()"><a href="#">London</a></li>
+      <li onclick="showNYC()"><a href="#">New York City</a></li>
+      <li onclick="showParis()"><a href="#">Paris</a></li>
+      <li onclick="showSeoul()"><a href="#">Seoul</a></li>
+      <li onclick="showSingapore()"><a href="#">Singapore</a></li>
+      <li onclick="showTokyo()"><a href="#">Tokyo</a></li>
+    </ul>
+
+  <div id="bangkokInfo" class="text">
+    <br><br>
+    Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple.<br><br>
+    - Find <strong><a href="https://www.hotels.com/de1313946/hotels-bangkok-thailand/" target="_blank">hotels</a></strong> in Bangkok here.<br><br>
+    - Find <strong><a href="http://www.bangkok.com/attraction/" target="_blank">main attractions</a></strong> in Bangkok here.<br><br>
+    - Find <strong><a href="https://www.eater.com/maps/best-bangkok-restaurants" target="_blank">restaurants</a></strong> in Bangkok here.<br><br>
+  </div>
+
+  <div id="dubaiInfo" class="text">
+    <br><br>
+    Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline.
+    <br><br>- Find <strong><a href="https://www.hotels.com/de11594/hotels-dubai-united-arab-emirates/" target="_blank">hotels</a></strong> in Dubai here.<br><br>
+    - Find <strong><a href="https://www.visitdubai.com/en/discover/things-to-do-in-dubai" target="_blank">main attractions</a></strong> in Dubai here.<br><br>
+    - Find <strong><a href="https://www.tripadvisor.com/Restaurants-g295424-Dubai_Emirate_of_Dubai.html" target="_blank">restaurants</a></strong> in Dubai here.<br><br>
+  </div>
+
+  <div id="hkInfo" class="text">
+    <br><br>
+    Hong Kong is an autonomous territory, and former British colony, in southeastern China. Its vibrant, densely populated urban centre is a major port and global financial hub with a skyscraper-studded skyline.
+    <br><br>- Find <strong><a href="https://www.hotels.com/de606379/hotels-hong-kong-hong-kong-sar/" target="_blank">hotels</a></strong> in Hong Kong here.<br><br>
+    - Find <strong><a href="http://www.discoverhongkong.com/us/see-do/highlight-attractions/top-10/index.jsp" target="_blank">main attractions</a></strong> in Hong Kong here.<br><br>
+    - Find <strong><a href="https://www.eater.com/maps/best-hong-kong-restaurants" target="_blank">restaurants</a></strong> in Hong Kong here.<br><br>
+  </div>
+  <div id="istanInfo" class="text">
+    <br><br>
+    Istanbul is a major city in Turkey that straddles Europe and Asia across the Bosphorus Strait. Its Old City reflects cultural influences of the many empires that once ruled here.
+    <br><br>- Find <strong><a href="https://www.hotels.com/de1341107/hotels-istanbul-turkey/" target="_blank">hotels</a></strong> in Istanbul here.<br><br>
+    - Find <strong><a href="https://www.istanbultouristpass.com/tourist-attractions-in-istanbul" target="_blank">main attractions</a></strong> in Istanbul here.<br><br>
+    - Find <strong><a href="https://www.eater.com/maps/best-restaurants-istanbul-38" target="_blank">restaurants</a></strong> in Istanbul here.<br><br>
+  </div>
+  <div id="londonInfo" class="text">
+    <br><br>
+    London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.
+    <br><br>- Find <strong><a href="https://www.hotels.com/de549499/hotels-london-united-kingdom/" target="_blank">hotels</a></strong> in London here.<br><br>
+    - Find <strong><a href="https://www.visitlondon.com/things-to-do/sightseeing/london-attraction/top-ten-attractions" target="_blank">main attractions</a></strong> in London here.<br><br>
+    - Find <strong><a href="https://www.timeout.com/london/restaurants/best-restaurants-in-london" target="_blank">restaurants</a></strong> in London here.<br><br>
+  </div>
+  <div id="nycInfo" class="text">
+    <br><br>
+    New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers.
+    <br><br>- Find <strong><a href="https://www.hotels.com/de1506246/hotels-new-york-new-york/" target="_blank">hotels</a></strong> in NYC here.<br><br>
+    - Find <strong><a href="https://www.nycgo.com/things-to-do/attractions" target="_blank">main attractions</a></strong> in NYC here.<br><br>
+    - Find <strong><a href="https://www.timeout.com/newyork/restaurants/100-best-new-york-restaurants" target="_blank">restaurants</a></strong> in NYC here.<br><br>
+  </div>
+  <div id="parisInfo" class="text">
+    <br><br>
+    Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral.
+    <br><br>- Find <strong><a href="https://www.hotels.com/de504261/hotels-paris-france/" target="_blank">hotels</a></strong> in Paris here.<br><br>
+    - Find <strong><a href="https://www.planetware.com/tourist-attractions-/paris-f-p-paris.htm" target="_blank">main attractions</a></strong> in Paris here.<br><br>
+    - Find <strong><a href="https://www.eater.com/maps/best-restaurants-paris-france" target="_blank">restaurants</a></strong> in Paris here.<br><br>
+  </div>
+  <div id="seoulInfo" class="text">
+    <br><br>
+    Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers, high-tech subways and pop culture meet Buddhist temples, palaces and street markets.
+    <br><br>- Find <strong><a href="https://www.hotels.com/de759818/hotels-seoul-south-korea/" target="_blank">hotels</a></strong> in Seoul here.<br><br>
+    - Find <strong><a href="http://english.visitseoul.net/top10/Top-10-Attractions?indexSn=1&sectionSn=60" target="_blank">main attractions</a></strong> in Seoul here.<br><br>
+    - Find <strong><a href="https://www.eater.com/maps/best-seoul-restaurants-38" target="_blank">restaurants</a></strong> in Seoul here.<br><br>
+  </div>
+  <div id="singaporeInfo" class="text">
+    <br><br>
+    Singapore, an island city-state off southern Malaysia, is a global financial center with a tropical climate and multicultural population.
+    <br><br>- Find <strong><a href="https://www.booking.com/city/sg/singapore.html" target="_blank">hotels</a></strong> in Singapore here.<br><br>
+    - Find <strong><a href="http://www.singapore-guide.com/attractions/10mustsee.htm" target="_blank">main attractions</a></strong> in Singapore here.<br><br>
+    - Find <strong><a href="https://www.eater.com/maps/best-restaurants-singapore" target="_blank">restaurants</a></strong> in Singapore here.<br><br>
+  </div>
+  <div id="tokyoInfo" class="text">
+    <br><br>
+    Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. 
+    <br><br>- Find <strong><a href="https://www.hotels.com/de726784/hotels-tokyo-japan/" target="_blank">hotels</a></strong> in Tokyo here.<br><br>
+    - Find <strong><a href="https://www.japan-guide.com/e/e2164.html" target="_blank">main attractions</a></strong> in Tokyo here.<br><br>
+    - Find <strong><a href="https://www.eater.com/maps/best-tokyo-restaurants" target="_blank">restaurants</a></strong> in Tokyo here.<br><br>
+  </div>
+   <script src="explore.js"></script>
+ </body>
