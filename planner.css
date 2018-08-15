@@ -21,9 +21,21 @@
 }
 
 .boxed {
-  background-color: #ffdb2b;
+  background-color: #98afd6;
   float: right;
   width: 35%;
-  height: 170px;
+  height: 230px;
+  text-align: center;
+}
+
+.sidebutton{
+  width: 45%;
+  background-color:  #ffdb2b;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: black;
+  font-size : 20px;
   text-align: center;
 }
