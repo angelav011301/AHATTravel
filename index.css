@@ -1,0 +1,116 @@
+html{
+ background-color: #174082
+}
+
+body {
+background-color: #f2f2f2;
+width: 1000px;
+padding: 10px;
+border: 10px solid #98afd6;
+margin-left:auto;
+margin-right: auto;
+}
+
+
+/* NAVIGATION BAR */
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #c5ccd8;
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 25px 35px;
+   text-decoration: none;
+      float AHAT Logo.png: right;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+   background-color: #ffdb2b;
+}
+
+.headers {
+ font-family: "Courier New", Courier, monospace;
+ color: black;
+ font-size : 35px;
+ font-weight: bold;
+ text-align: center;
+}
+
+.paragraph {
+ color: black;
+ font-size : 20px;
+ text-align: center;
+
+}
+
+.button {
+ width: 25%;
+ padding: 30px 0;
+ background-color:  #ffdb2b;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+ color: black;
+ font-size : 15px;
+ text-align: center;
+}
+
+#idlogo {
+  float: right;
+  padding: 10px;
+}
+
+.indexPara{
+  color: black;
+  font-size : 30px;
+  position: relative;
+  left: 75px;
+}
+
+#idBigLogo{
+  left: 100px;
+  padding-left: 40px
+}
+
+.lowerText {
+  color: black;
+  font-size : 20px;
+  position: relative;
+  left: 30px;
+}
+.righttext {
+  color: black;
+  font-size : 25px;
+}
+
+
+.boxed {
+  background-color: #98afd6;
+  float: right;
+  width: 45%;
+  height: 350px;
+  text-align: center;
+}
+
+.buttonIndex{
+width: 60%;
+padding: 20px 0;
+background-color:  #ffdb2b;
+margin-left: auto;
+margin-right: auto;
+display: block;
+color: black;
+font-size : 20px;
+text-align: center;
+}
