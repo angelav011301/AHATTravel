@@ -39,3 +39,9 @@
   font-size : 20px;
   text-align: center;
 }
+
+.text {
+  color: black;
+  font-size : 20px;
+  font-family: "Courier New", Courier, monospace;
+}
