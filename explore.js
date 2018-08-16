@@ -21,7 +21,16 @@ function showBangkok() {
   var x = document.getElementById("bangkokInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
-  } else {
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("tokyoInfo").style.display = "none";
+  }  else {
       x.style.display = "none";
   }
 }
@@ -29,6 +38,15 @@ function showDubai() {
   var x = document.getElementById("dubaiInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("bangkokInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("tokyoInfo").style.display = "none";
   } else {
       x.style.display = "none";
   }
@@ -37,14 +55,15 @@ function showHongKong() {
   var x = document.getElementById("hkInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
-  } else {
-      x.style.display = "none";
-  }
-}
-function showHongKong() {
-  var x = document.getElementById("hkInfo");
-  if (x.style.display === "none") {
-      x.style.display = "block";
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("bangkokInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("tokyoInfo").style.display = "none";
   } else {
       x.style.display = "none";
   }
@@ -53,6 +72,15 @@ function showIstanbul() {
   var x = document.getElementById("istanInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("bangkokInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("tokyoInfo").style.display = "none";
   } else {
       x.style.display = "none";
   }
@@ -61,6 +89,15 @@ function showLondon() {
   var x = document.getElementById("londonInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("bangkokInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("tokyoInfo").style.display = "none";
   } else {
       x.style.display = "none";
   }
@@ -69,6 +106,15 @@ function showNYC() {
   var x = document.getElementById("nycInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("bangkokInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("tokyoInfo").style.display = "none";
   } else {
       x.style.display = "none";
   }
@@ -77,6 +123,15 @@ function showParis() {
   var x = document.getElementById("parisInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("bangkokInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("tokyoInfo").style.display = "none";
   } else {
       x.style.display = "none";
   }
@@ -85,6 +140,15 @@ function showSeoul() {
   var x = document.getElementById("seoulInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("bangkokInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("tokyoInfo").style.display = "none";
   } else {
       x.style.display = "none";
   }
@@ -93,6 +157,15 @@ function showSingapore() {
   var x = document.getElementById("singaporeInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("bangkokInfo").style.display = "none";
+      document.getElementById("tokyoInfo").style.display = "none";
   } else {
       x.style.display = "none";
   }
@@ -101,6 +174,15 @@ function showTokyo() {
   var x = document.getElementById("tokyoInfo");
   if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("bangkokInfo").style.display = "none";
   } else {
       x.style.display = "none";
   }
