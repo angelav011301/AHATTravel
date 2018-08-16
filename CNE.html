@@ -21,35 +21,57 @@
 <!-- Box -->
 
   <div class="boxed">
-     <p class = "headers" > Utensils </p>
+    <br>
+     <p class="paragraph">Utensils </p>
+
+    <br>
     <button onclick="location.href = 'checklist.html'"  class= "sidebutton"> Check List </button>
     <br>
     <button onclick="location.href = 'reminders.html'"  class= "sidebutton"> Reminders </button>
 
   </div>
 
-  
+
 <form class="Jounral">
 
-  Name of Entry:
-  <input type="text" name="Name of Entry"><br>
-  <a href="calendarapitest.html">Date(s)s:</a>
-  <input type="text" name="Date(s)"><br>
+  Name of Trip:
+  <input id="tripName" type="text" name="Name of Trip"><br>
+  <a href="calendarapitest.html">Date(s) - Start and End:</a>
+  <input id="tripDate" type="text" name="Date(s)"><br>
   <a href="maptestfinal.html">Location:</a>
-  <input type="text" name="Location"><br>
+  <input id="location" type="text" name="Location"><br>
   Time of Departure:
-  <input type="text" name="Departure"><br>
+  <input id="departure" type="text" name="Departure"><br>
   Time of Arivial:
-  <input type="text" name="Arivial"><br>
-  <br>
+  <input id="arrival" type="text" name="Arivial"><br>
   <br>
   </form>
+<button onclick="results1()" class="button">Save Trip</button>
 
+<p id="tripEntry" class="text"></p>
 
 <br><br>
-  <form class="Jounral">
   <h1 class="headers"> Agenda </h1>
-  Date:<input type="text" name="date"> <br>
+<form class ="Jounral">
+
+  Date:<input id="date" type="text" name="date"><br>
+  Acitivty Name:<input id="eventName" type="text" name="eventName"><br>
+  Description:<input id="description" type="text" name="description"><br>
+  <br>
+</form>
+
+<button onclick="results2()" class="button">Create Activity</button>
+<!-- <p id="date1"></p>
+<p id="event"> </p>
+<p id="descript"> </p> -->
+
+<p id="entry" class="text"></p>
+<!-- <p id="entry1"></p>
+<p id="entry2"></p> -->
+<!--
+  <form class="Jounral">
+  Date:<inpu
+  t type="text" name="date"> <br>
   Event Name:
   <input type="text" name="eventname">    <input type="text" name="time" class="time"> <p1 class="time"> Time   </p1><br>
   Description:
@@ -80,9 +102,11 @@
 
   </form>
 </div>
+-->
 
      </body>
 
  <script src="AHAT.js" ></script>
+  <script src="CNE.js" ></script>
 
    </html>
