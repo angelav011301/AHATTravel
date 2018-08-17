@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>travel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none;}
+#pics{
+  margin-left:30%;
+}
+</style>
+</head>
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div id="pics" class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="photo-1445252029812-81154a7e4f6b.jpg" style="width:100%">
+  <img class="mySlides" src="photo-1465414951857-102134ffaa57.jpg" style="width:100%">
+  <img class="mySlides" src="photo-1528035177028-f52bf3d7b312.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

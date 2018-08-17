@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
+<style>
+
+.mySlides {
+  display:none;
+  height: 300px;
+
+}
+#pics{
+  margin-top: 10px;
+  width:50%;
+  margin-left: 25%;
+
+}
+</style>
+
  <head>
-   <h1 class=topheaders > AHATravel </h1>
-     <link rel="stylesheet" href = "index.css">
+   <div id="hi">
+     <h1 class="topheaders"> <span id="title">AHATravel</span> </h1>
+   </div>
+    <link rel="stylesheet" href = "index.css">
      <!-- NAVIGATION BAR -->
      <ul>
       <div>
@@ -20,24 +37,72 @@
 
  <body>
 
+   <title>travel</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--
 <p class = "indexPara" > What is AHATravel? </p>
-<!-- Box -->
-
-    <div class="boxed">
-      <br>
-      <p class = righttext> GET STARTED PLANNING! </p> <br>
-      <br>
-      <button onclick="SignUp.href = 'signup.html'"  class= "buttonIndex"> Sign Up </button>
-      <br>
-      <button onclick="login.href = 'Login.html'"  class= "buttonIndex"> Login </button>
-</div>
-
-
 <img id="idBigLogo" src="AHAT Logo.png" style = "width:25%" alt="">
 
 <p class = "lowerText" > AHAT Travel is a place where you can organize <br>
   your future trips. Keeping all your information in <br>
-  one place for your convenience!</p>
+  one place for your convenience!<title>travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ -->
+
+
+  <div id="pics" class="w3-content w3-section" >
+    <img class="mySlides" src="images/photo-1445252029812-81154a7e4f6b.jpg" style="width:100%">
+    <img class="mySlides" src="images/photo-1465414951857-102134ffaa57.jpg" style="width:100%">
+    <img class="mySlides" src="images/photo-1528035177028-f52bf3d7b312.jpg" style="width:100%">
+    <img class="mySlides" src="images/photo-1528197387378-89c568124a24.jpg" style="width:100%">
+    <img class="mySlides" src="images/photo-1504913659239-6abc87875a63.jpg" style="width:100%">
+    <img class="mySlides" src="images/photo-1524396309943-e03f5249f002.jpg" style="width:100%">
+    <img class="mySlides" src="images/photo-1517370197618-b2055fe2e440.jpg" style="width:100%">
+    <img class="mySlides" src="images/photo-1526942617995-8c629e716da7.jpg" style="width:100%">
+    <img class="mySlides" src="images/photo-1529180184525-78f99adb8e98.jpg" style="width:100%">
+    <img class="mySlides" src="images/.jpg" style="width:100%">
+    <img class="mySlides" src="images/.jpg" style="width:100%">
+    <img class="mySlides" src="images/.jpg" style="width:100%">
+
+  </div>
+
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script></p>
+
+  </style>
+  </head>
+  <body>
+
+
+
+  <!-- Box -->
+
+      <div class="boxed">
+        <br>
+        <p class = righttext> GET STARTED PLANNING! </p> <br>
+        <br>
+        <button onclick="SignUp.href = 'signup.html'"  class= "buttonIndex"> Sign Up </button>
+        <br>
+        <button onclick="login.href = 'Login.html'"  class= "buttonIndex"> Login </button>
+  </div>
+
 
  </body>
 
