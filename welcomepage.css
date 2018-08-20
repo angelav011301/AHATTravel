@@ -1,0 +1,101 @@
+html{
+  background-color: #174082
+}
+
+body {
+background-color: #f2f2f2;
+width: 1000px;
+padding: 10px;
+border: 10px solid #98afd6;
+margin-left:auto;
+margin-right: auto;
+}
+
+
+/* NAVIGATION BAR */
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #c5ccd8;
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   color: black;
+   text-align: center;
+   padding: 25px 35px;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+   background-color: #ffdb2b;
+}
+
+.headers {
+ font-family: "Courier New", Courier, monospace;
+ color: black;
+ font-size : 35px;
+ font-weight: bold;
+ text-align: center;
+}
+
+@font-face {
+  font-family: Fabulous;
+  src: url(Fabulous.ttf);
+}
+
+.topheaders {
+ font-family: Fabulous;
+ color: black;
+ font-size : 40px;
+ text-align: center;
+}
+
+.paragraph {
+  color: black;
+  font-size : 45px;
+  text-align: center;
+}
+#idLogo {
+  float: right;
+  padding-right: 30px
+}
+
+
+.button {
+  width: 25%;
+  padding: 20px 0;
+  background-color:  #ffdb2b;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: black;
+  font-size : 15px;
+  text-align: center;
+}
+
+
+.Jounral{
+  color: black;
+  font-size : 25px;
+}
+
+.time{
+  float: right;
+  text-align: right;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  display:none;
+}
+p
