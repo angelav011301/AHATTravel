@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-       <h1 class=topheaders > AHATravel </h1>
-      <link rel="stylesheet" href = "AHAT.css">
-      <link rel="stylesheet" href = "planner.css">
-     <!-- NAVIGATION BAR -->
-     <ul>
+    <div id="hi">
+      <h1 class="topheaders"> <span id="title">AHATravel</span> </h1>
       <div>
+      <link rel="stylesheet" href = "checkList.css">
+      <link rel="stylesheet" href = "AHAT.css">
+      <br>
+
+     <!-- NAVIGATION BAR -->
+     <ul >
+      <div id="navDiv">
        <li><a href="index.html">HOME</a></li>
        <li><a href="planner.html">PLANNER</a></li>
        <li><a href="explore.html.html">EXPLORE</a></li>
@@ -21,12 +25,15 @@
   </head>
 
   <body>
-<h1 class = "headers"> Planner </h1>
+
+<br>
+<br>
+<!-- <h1 class = "headers">  My Planner </h1>
 
 
-<!-- Box -->
+<!- Box -->
 
-  <div class="boxed">
+  <!-- <div class="boxed">
     <br>
      <p class="paragraph">Utensils </p>
 
@@ -35,10 +42,39 @@
     <br>
     <button onclick="location.href = 'reminders.html'"  class= "sidebutton"> Reminders </button>
 
+  </div> -
+
+<!- <br>
+
+  <button onclick= "PlannerStuff()" class="plannerbutton" >Planner</button>
+  <br><br>
+
+    <div id="myPlanner">
+
+
+<button onclick= "Agenda()" class="buttonAgenda" >Agenda</button>
+
   </div>
 
 
-<form class="Jounral">
+  <button onclick= "clist()" class="buttonCL" >Check List</button>
+  <br><br>
+
+    <div id="myCL">
+
+      </div>
+
+<button onclick= "PlannerStuff()" class="plannerbutton" >Planner</button>
+<br><br>
+
+  </div> -->
+
+
+
+
+<h1 class = "header" id="Planner"> Planner </h1>
+
+ <form class="Jounral">
 
   Name of Trip:
   <input id="tripName" type="text" name="Name of Trip"><br>
@@ -50,6 +86,7 @@
   <input id="departure" type="text" name="Departure"><br>
   Time of Arivial:
   <input id="arrival" type="text" name="Arivial"><br>
+
   <br>
   </form>
 <button onclick="results1()" class="button">Save Trip</button>
@@ -57,7 +94,7 @@
 <p id="tripEntry" class="text"></p>
 
 <br><br>
-  <h1 class="headers"> Agenda </h1>
+  <h1 class="headers"  id="Agenda"> Agenda </h1>
 <form class ="Jounral">
 
   Date:<input id="date" type="text" name="date"><br>
@@ -67,52 +104,36 @@
 </form>
 
 <button onclick="results2()" class="button">Create Activity</button>
-<!-- <p id="date1"></p>
-<p id="event"> </p>
-<p id="descript"> </p> -->
+
 
 <p id="entry" class="text"></p>
-<!-- <p id="entry1"></p>
-<p id="entry2"></p> -->
-<!--
-  <form class="Jounral">
-  Date:<inpu
-  t type="text" name="date"> <br>
-  Event Name:
-  <input type="text" name="eventname">    <input type="text" name="time" class="time"> <p1 class="time"> Time   </p1><br>
-  Description:
-  <input type="text" name="Description"><br>
 
-</form>
+ <h1 class = "header"  id="Checklist"> My Check List </h1>
 
-<button onclick="myFunction()" class= "button"> Add Event </button>
 
-  <div id="myDIV">
-  <form class= "Jounral">
-    Event Name:
-    <input type="text" name="eventname">    <input type="text" name="time" class="time"> <p1 class="time"> Time   </p1><br>
-    Description:
-    <input type="text" name="Description"><br>
-  </form>
-</div>
-<br>
+ <div class="container">
+   <p>
+     <label for="new-task">Add Item</label><input id="new-task" type="text"><button onclick="addTask()" id = "CLButton">Add</button>
+   </p>
 
-<button onclick="NextDay()"  class= "button"> Add Day </button>
-  <div id ="idDay">
-  <form class= "Jounral">
-    Date:<input type="text" name="date"> <br>
-    Event Name:
-    <input type="text" name="eventname">    <input type="text" name="time" class="time"> <p1 class="time"> Time   </p1><br>
-    Description:
-    <input type="text" name="Description"><br>
+   <h3>To Do List</h3>
+   <ul class="lists" id="incomplete-tasks">
+     <li class="litems"><input type="checkbox"><label>Pack clothes!</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
 
-  </form>
-</div>
--->
+   </ul>
+
+   <h3>Completed</h3>
+   <ul class="lists" id="completed-tasks">
+     <li class="litems"><input type="checkbox" checked><label>Signed Up for AHAT!</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+   </ul>
+ </div>
+
+ <br>
+ <br>
+
 
      </body>
 
  <script src="AHAT.js" ></script>
-  <script src="CNE.js" ></script>
-
+<script src="CNEV2.js" ></script>
    </html>
