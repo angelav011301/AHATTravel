@@ -13,20 +13,24 @@ margin-right: auto;
 
 
 /* NAVIGATION BAR */
+
+}
 ul {
    list-style-type: none;
    margin: 0;
    padding: 0;
    overflow: hidden;
    background-color: #c5ccd8;
+
 }
 
 li {
    float: left;
+   display: inline;
 }
 
 li a {
-   display: block;
+   display: inline;
    color: black;
    text-align: center;
    padding: 25px 35px;
@@ -119,6 +123,7 @@ li a:hover {
 /*  Check list code */
 
 
+
 /* Basic Style */
 body {
   background: #fff;
@@ -141,10 +146,10 @@ li, h3 {
   clear:both;
   list-style:none;
 }
-input, button {
+input, #CLButton {
   outline: none;
 }
-button {
+#CLButton {
   background: none;
   border: 0px;
   color: #888;
@@ -154,7 +159,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+#CLButton:hover {
   color: #333;
 }
 /* Heading */
@@ -229,7 +234,7 @@ li > .delete:hover {
 
 /* Edit Task */
 ul li input[type=text] {
-  display:none;
+  display:list-item;
 }
 
 ul li.editMode input[type=text] {
@@ -261,11 +266,13 @@ ul li.editMode label {
   font-size : 15px;
   text-align: center;
 }
-#myPlanner {
-  display:none;
-}
 
-.buttonPlanner {
+
+
+.plannerbutton {
+  /* position:initial;
+  left:10px;
+  top:100px; */
   width: 25%;
   padding: 20px 0;
   background-color:  #ffdb2b;
@@ -273,6 +280,10 @@ ul li.editMode label {
   color: black;
   font-size : 15px;
   text-align: center;
+}
+
+#myPlanner {
+  display:none;
 }
 
 #myAgenda {
@@ -283,7 +294,6 @@ ul li.editMode label {
   width: 25%;
   padding: 20px 0;
   background-color:  #ffdb2b;
-  display: inline-block;
   color: black;
   font-size : 15px;
   text-align: center;
@@ -298,3 +308,24 @@ ul li.editMode label {
     font-size : 15px;
     text-align: center;
   }
+
+  #myCL {
+    display:none;
+  }
+
+  .btn-group button {
+    background-color: #ffdb2b; /* Green background */
+    color: black; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+}
+
+/* .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+} */
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
