@@ -24,11 +24,8 @@ function results2() {
 var tripArray=[];
 function results1() {
   var tripName = "Trip Name: " + document.getElementById('tripName').value;
-  var tripDate = "Trip Date: " + document.getElementById('tripDate').value;
   var location = "Location: " + document.getElementById('location').value;
-  var departure = "Time of Departure: " + document.getElementById('departure').value;
-  var arrival = "Time of Arrival: " + document.getElementById('arrival').value;
-  var trip = {tripNField : tripName, tripDField :tripDate, locationField: location, departureField: departure, arrivalField: arrival};
+  var trip = {tripNField : tripName, locationField: locatio};
   var arrayLength = tripArray.length;
   if(arrayLength == 0){
     tripArray = [trip];
@@ -38,15 +35,12 @@ function results1() {
   var results = "";
 
   for(var i=0; i <tripArray.length;i++){
-    results += tripArray[i].tripNField + "<br>" + tripArray[i].tripDField + "<br>" + tripArray[i].locationField + "<br>" + tripArray[i].departureField + "<br>" + tripArray[i].arrivalField+ "<br><br>";
+    results += tripArray[i].tripNField + "<br>" + tripArray[i].locationField + "<br><br>";
   }
 
   document.getElementById("tripEntry").innerHTML = results;
   document.getElementById('tripName').value='';
-  document.getElementById('tripDate').value='';
   document.getElementById('location').value='';
-  document.getElementById('departure').value='';
-  document.getElementById('arrival').value='';
 }
 
 
