@@ -25,7 +25,7 @@ var tripArray=[];
 function results1() {
   var tripName = "Trip Name: " + document.getElementById('tripName').value;
   var location = "Location: " + document.getElementById('location').value;
-  var trip = {tripNField : tripName, locationField: locatio};
+  var trip = {tripNField : tripName, locationField: location};
   var arrayLength = tripArray.length;
   if(arrayLength == 0){
     tripArray = [trip];
