@@ -50,10 +50,10 @@ function results1() {
 }
 
 
-// CHECK LIST //
 
+// Check list
 var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
+var addButton=document.getElementsByTagName("CLbutton")[0];//first button
 var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
@@ -190,7 +190,7 @@ addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
 
 
-var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
+function bindTaskEvents(taskListItem,checkBoxEventHandler){
 	console.log("bind list item events");
 //select ListItems children
 	var checkBox=taskListItem.querySelector("input[type=checkbox]");
@@ -215,42 +215,10 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 	}
 
 
+
+
 //cycle over completedTasksHolder ul list items
 	for (var i=0; i<completedTasksHolder.children.length;i++){
 	//bind events to list items chldren(tasksIncompleted)
 		bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 	}
-
-
-
-  // Planner//
-  function PlannerStuff() {
-    console.log("works");
-    var x = document.getElementById("myPlanner");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-
-  // Agenda//
-  function Agenda() {
-    var x = document.getElementById("myAgenda");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-// Agenda//
-function clist() {
-  var x = document.getElementById("myCL");
-  if (x.style.display === "none") {
-      x.style.display = "block";
-  } else {
-      x.style.display = "none";
-  }
-}
