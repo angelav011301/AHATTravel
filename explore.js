@@ -1,7 +1,7 @@
 function searchCities() {
     // Declare variables
     var input, search, i;
-    input = document.getElementById('myInput');
+    input = document.getElementById("myInput");
     search = input.value.toUpperCase();
     // var notThere = "Sorry! No information for your search is available at this time.";
     // ul = document.getElementById("myUL");
@@ -46,8 +46,8 @@ function searchCities() {
 
     if (cityNames.includes(search) === true) {
     for (i = 0; i < citiesArray.length; i++) {
-      // if(search === citiesArray[i][0]) {
-        if(search === citiesArray[0][0]){
+      if(search === citiesArray[i][0]) {
+        if(search == citiesArray[0][0]){
           showBangkok();
         } else if (search === citiesArray[1][0]) {
           showDubai();
@@ -68,22 +68,19 @@ function searchCities() {
         } else if (search === citiesArray[10][0]) {
           showTokyo();
         }
-          map.getView().setCenter(ol.proj.fromLonLat([citiesArray[i][1], citiesArray[i][2]]));
-      // }
+        console.log(search);
+        map.getView().setCenter(ol.proj.fromLonLat([citiesArray[i][1], citiesArray[i][2]]));
+        console.log(citiesArray[i][1], citiesArray[i][2]);
+      }
+      }
       // else if (search != citiesArray[i][0]) {
       //     document.getElementById("sorry").innerHTML = notThere;
       //     break;
       // }
-    }
+
   } else {
-    console.log("nope"); //ADD SOMETHING BOIIIII
-  }
-    // if(search ==="meow") {
-    //   document.write("stop");
-    // }
-
-
-
+  console.log("nope"); //ADD SOMETHING BOIIIII
+  showSorry();
 }
 
 // map.getView().setCenter(ol.proj.fromLonLat([55.296249, 25.276987]))"><a href="#">Dubai</a></li>
@@ -95,7 +92,7 @@ function searchCities() {
 // <li onclick="showSeoul(); map.getView().setCenter(ol.proj.fromLonLat([127.024612, 37.532600    ]))"><a href="#">Seoul</a></li>
 // <li onclick="showSingapore(); map.getView().setCenter(ol.proj.fromLonLat([103.851959, 1.290270]))"><a href="#">Singapore</a></li>
 // <li onclick="showTokyo(); map.getView().setCenter(ol.proj.fromLonLat([139.691706, 35.689487]))"
-
+}
 
 function showBangkok() {
   var x = document.getElementById("bangkokInfo");
@@ -110,6 +107,7 @@ function showBangkok() {
       document.getElementById("seoulInfo").style.display = "none";
       document.getElementById("singaporeInfo").style.display = "none";
       document.getElementById("tokyoInfo").style.display = "none";
+      document.getElementById("sorry").style.display="none";
   // }  else {
   //     x.style.display = "none";
   // }
@@ -127,6 +125,7 @@ function showDubai() {
       document.getElementById("seoulInfo").style.display = "none";
       document.getElementById("singaporeInfo").style.display = "none";
       document.getElementById("tokyoInfo").style.display = "none";
+      document.getElementById("sorry").style.display="none";
   // } else {
   //     x.style.display = "none";
   // }
@@ -144,6 +143,7 @@ function showHongKong() {
       document.getElementById("seoulInfo").style.display = "none";
       document.getElementById("singaporeInfo").style.display = "none";
       document.getElementById("tokyoInfo").style.display = "none";
+      document.getElementById("sorry").style.display="none";
   // } else {
   //     x.style.display = "none";
   // }
@@ -161,6 +161,7 @@ function showIstanbul() {
       document.getElementById("seoulInfo").style.display = "none";
       document.getElementById("singaporeInfo").style.display = "none";
       document.getElementById("tokyoInfo").style.display = "none";
+      document.getElementById("sorry").style.display="none";
   // } else {
   //     x.style.display = "none";
   // }
@@ -178,6 +179,7 @@ function showLondon() {
       document.getElementById("seoulInfo").style.display = "none";
       document.getElementById("singaporeInfo").style.display = "none";
       document.getElementById("tokyoInfo").style.display = "none";
+      document.getElementById("sorry").style.display="none";
   // } else {
   //     x.style.display = "none";
   // }
@@ -195,6 +197,7 @@ function showNYC() {
       document.getElementById("seoulInfo").style.display = "none";
       document.getElementById("singaporeInfo").style.display = "none";
       document.getElementById("tokyoInfo").style.display = "none";
+      document.getElementById("sorry").style.display="none";
   // } else {
   //     x.style.display = "none";
   // }
@@ -212,6 +215,7 @@ function showParis() {
       document.getElementById("seoulInfo").style.display = "none";
       document.getElementById("singaporeInfo").style.display = "none";
       document.getElementById("tokyoInfo").style.display = "none";
+      document.getElementById("sorry").style.display="none";
   // } else {
   //     x.style.display = "none";
   // }
@@ -229,6 +233,7 @@ function showSeoul() {
       document.getElementById("bangkokInfo").style.display = "none";
       document.getElementById("singaporeInfo").style.display = "none";
       document.getElementById("tokyoInfo").style.display = "none";
+      document.getElementById("sorry").style.display="none";
   // } else {
   //     x.style.display = "none";
   // }
@@ -246,9 +251,7 @@ function showSingapore() {
       document.getElementById("seoulInfo").style.display = "none";
       document.getElementById("bangkokInfo").style.display = "none";
       document.getElementById("tokyoInfo").style.display = "none";
-  // } else {
-  //     x.style.display = "none";
-  // }
+      document.getElementById("sorry").style.display="none";
 }
 function showTokyo() {
   var x = document.getElementById("tokyoInfo");
@@ -263,7 +266,20 @@ function showTokyo() {
       document.getElementById("seoulInfo").style.display = "none";
       document.getElementById("singaporeInfo").style.display = "none";
       document.getElementById("bangkokInfo").style.display = "none";
-  // } else {
-  //     x.style.display = "none";
-  // }
+      document.getElementById("sorry").style.display="none";
+}
+
+function showSorry() {
+  var x = document.getElementById("sorry");
+  x.style.display = "block";
+      document.getElementById("dubaiInfo").style.display = "none";
+      document.getElementById("hkInfo").style.display = "none";
+      document.getElementById("istanInfo").style.display = "none";
+      document.getElementById("londonInfo").style.display = "none";
+      document.getElementById("nycInfo").style.display = "none";
+      document.getElementById("parisInfo").style.display = "none";
+      document.getElementById("seoulInfo").style.display = "none";
+      document.getElementById("singaporeInfo").style.display = "none";
+      document.getElementById("bangkokInfo").style.display = "none";
+  map.getView().setCenter(ol.proj.fromLonLat([285.9224, 40.728793]));
 }
