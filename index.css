@@ -151,7 +151,7 @@ text-align: center;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
-.blurbText {
+#blurbText {
   color: black;
   font-size : 25px;
   text-align: center;
