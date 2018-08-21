@@ -168,4 +168,5 @@ li > .delete:hover {
   text-shadow: 4px 2px black;
   opacity: 1;
   color: white;
+  font-size: 60px;
 }
