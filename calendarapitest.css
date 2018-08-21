@@ -68,4 +68,6 @@ li a:hover {
 
 iframe {
  display:block;
+ text-align: center;
+ margin: auto;
 }
