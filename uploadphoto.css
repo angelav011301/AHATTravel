@@ -68,3 +68,17 @@ li a:hover {
 h1 {
   text-align: center;
 }
+.topheaders{
+  background-image: url(profile.jpg);
+  margin:0;
+  padding:50px;
+  background-size:cover;
+  display: block;
+  opacity: 0.6;
+}
+#title{
+  text-shadow: 4px 2px black;
+  opacity: 1;
+  color:white;
+  font-size: 60px;
+}
